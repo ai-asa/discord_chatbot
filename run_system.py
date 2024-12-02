@@ -11,7 +11,7 @@ import re
 load_dotenv()
 
 class DiscordChatBot:
-    config_file_path = 'config.txt'
+    config_file_path = 'config.ini'
     config = configparser.ConfigParser()
     config.read(config_file_path, encoding='utf-8')
     historys_limit = int(config.get('INDEX', 'historys_limit',fallback=4))
